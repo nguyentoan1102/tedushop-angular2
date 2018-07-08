@@ -5,6 +5,6 @@ export const appRoutes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   //localhost:4200/login
   { path: 'login', loadChildren: './login/login.module#LoginModule' },
-  //localhost:4200/main
+  // //localhost:4200/main
   { path: 'main', loadChildren: './main/main.module#MainModule' }
 ]
