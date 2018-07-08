@@ -1,33 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-
-import { MainComponent } from './main/main.component';
-import { FunctionComponent } from './main/function/function.component';
-import { HomeComponent } from './main/home/home.component';
-import { ProductComponent } from './main/product/product.component';
-import { ProductCategoryComponent } from './main/product-category/product-category.component';
-import { RoleComponent } from './main/role/role.component';
-import { UserComponent } from './main/user/user.component';
-import { LoginComponent } from 'src/app/login/login.component';
-
+import { appRoutes } from './app.routes';
+// import { AuthGuard } from './core/guards/auth.guard';
+// import { PaginationModule } from 'ngx-bootstrap/pagination';
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    MainComponent,
-    FunctionComponent,
-    HomeComponent,
-    ProductComponent,
-    ProductCategoryComponent,
-    RoleComponent,
-    UserComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    RouterModule.forRoot(appRoutes, { useHash: true }),
+    // PaginationModule.forRoot()
   ],
-  providers: [],
+  // providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
