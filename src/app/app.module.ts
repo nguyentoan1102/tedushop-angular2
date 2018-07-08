@@ -18,7 +18,7 @@ import { appRoutes } from './app.routes';
     RouterModule.forRoot(appRoutes, { useHash: true }),
     // PaginationModule.forRoot()
   ],
-  // providers: [AuthGuard],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

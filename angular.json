@@ -22,14 +22,22 @@
               "src/favicon.ico",
               "src/assets"
             ],
+
             "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "./node_modules/font-awesome/css/font-awesome.css",
-              "./node_modules/animate.css/animate.css",
-              "./src/app/asets/css/custom.css",
-              "src/styles.css"
+              "./src/assets/vendors/bootstrap/dist/css/bootstrap.min.css",
+              "./src/assets/vendors/font-awesome/css/font-awesome.min.css",
+              "./src/assets/vendors/nprogress/nprogress.css",
+              "./src/assets/css/custom.min.css",
+              "./src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./src/assets/vendors/jquery/dist/jquery.min.js",
+              "./src/assets/vendors/bootstrap/dist/js/bootstrap.min.js",
+              "./src/assets/vendors/fastclick/lib/fastclick.js",
+              "./src/assets/vendors/nprogress/nprogress.js",
+              "./src/assets/js/custom.min.js"
+
+            ]
           },
           "configurations": {
             "production": {
