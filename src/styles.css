@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+.alertify {
+  background: #FFF;
+  background-clip: border-box;
+  border: 1px solid #333 !important;
+  border-radius: 1px !important;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, .3) ;
+  background-clip: padding-box;
+}
