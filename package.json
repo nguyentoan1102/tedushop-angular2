@@ -22,11 +22,13 @@
     "@angular/router": "^6.0.3",
     "@types/rx": "^4.1.1",
     "alertify": "^0.3.0",
+    "angular2-dropdown-multiselect": "^1.2.1",
     "animate.css": "^3.6.1",
     "bootstrap": "^4.1.1",
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "gentelella": "^1.4.0",
+    "ng2-daterangepicker": "^2.0.12",
     "ngx-bootstrap": "^3.0.1",
     "rxjs": "^6.2.1",
     "zone.js": "^0.8.26"
