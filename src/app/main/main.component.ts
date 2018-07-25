@@ -11,6 +11,7 @@ import { AuthenService } from '../core/services/authen.service';
 })
 export class MainComponent implements OnInit {
   public user: LoggedInUser;
+  public baseFolder: string = SystemConstants.BASE_API;
   constructor(private utilityService: UtilityService, private authenService: AuthenService) { }
 
   ngOnInit() {
