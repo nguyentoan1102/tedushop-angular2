@@ -30,6 +30,7 @@
               "./node_modules/alertify/themes/alertify.bootstrap.css",
               "./node_modules/alertify/themes/alertify.core.css",
               "./node_modules/alertify/themes/alertify.default.css",
+              "./node_modules/angular-tree-component/dist/angular-tree-component.css",
               "src/assets/css/custom.css",
               "./src/styles.css"
 
