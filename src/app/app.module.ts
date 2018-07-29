@@ -8,9 +8,11 @@ import { appRoutes } from './app.routes';
 import { AuthGuard } from './core/guards/auth.guard';
 import { PaginationModule } from '../../node_modules/ngx-bootstrap/pagination';
 
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

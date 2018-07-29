@@ -5,8 +5,10 @@ import { mainRoutes } from './main.routes';
 import { RouterModule, Routes } from '@angular/router';
 import { UserModule } from './user/user.module';
 import { HomeModule } from './home/home.module';
-import {UtilityService} from '../core/services/utility.service';
-import {AuthenService} from '../core/services/authen.service';
+import { UtilityService } from '../core/services/utility.service';
+import { AuthenService } from '../core/services/authen.service';
+import { SidebarMenuComponent } from '../shared/sidebar-menu/sidebar-menu.component';
+import { TopMenuComponent } from '../Shared/top-menu/top-menu.component';
 
 @NgModule({
   imports: [
@@ -15,7 +17,7 @@ import {AuthenService} from '../core/services/authen.service';
     HomeModule,
     RouterModule.forChild(mainRoutes)
   ],
-  declarations: [MainComponent],
-  providers:[UtilityService,AuthenService]
+  declarations: [MainComponent, SidebarMenuComponent, TopMenuComponent],
+  providers: [UtilityService, AuthenService]
 })
 export class MainModule { }
