@@ -40,8 +40,14 @@ export class UserComponent implements OnInit {
     singleDatePicker: true
   };
 
-  constructor(private _dataService: DataService, private _notificationService: NotificationService, private _uploadService: UploadService) { }
-
+  constructor(private _dataService: DataService,
+    private _notificationService: NotificationService,
+    private _utilityService: UtilityService,
+    private _uploadService: UploadService, public _authenService: AuthenService) {
+    if (_authenService.checkAccess('USER') == false) {
+      _utilityService.navigateToLogin();
+    }
+  }
   ngOnInit() {
     this.loadRoles();
     this.loadData();
